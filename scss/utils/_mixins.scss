@@ -1,0 +1,38 @@
+@use 'functions' as f;
+@use 'breakpoints' as *;
+
+@mixin fs-highlight {
+	font-size: f.rem(20);
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+@mixin fs-name {
+	font-size: f.rem(13);
+	line-height: 1.1;
+	font-weight: 500;
+}
+
+@mixin fs-status {
+	font-size: f.rem(11);
+	line-height: 1.1;
+	font-weight: 500;
+}
+
+@mixin fs-quote {
+	font-size: f.rem(13);
+	line-height: 1.4;
+	font-weight: 500;
+}
+
+@mixin respond-min($size) {
+	@media (min-width: map-get($breakpoints, $size)) {
+		@content;
+	}
+}
+
+@mixin respond-max($size) {
+	@media (max-width: map-get($breakpoints, $size)) {
+		@content;
+	}
+}

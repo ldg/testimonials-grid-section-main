@@ -1,0 +1,10 @@
+@use 'functions' as f;
+
+$box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+
+$spacing-40: f.rem(40);
+$spacing-32: f.rem(32);
+$spacing-24: f.rem(24);
+$spacing-16: f.rem(16);
+$spacing-8: f.rem(8);
+$spacing-4: f.rem(4);
